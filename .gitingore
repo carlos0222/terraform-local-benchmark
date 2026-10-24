@@ -1,0 +1,58 @@
+
+# ==========================================
+# TERRAFORM
+# ==========================================
+
+# Proveedores descargados por Terraform
+.terraform/
+
+# Estado de la infraestructura
+# Puede contener información sensible
+*.tfstate
+*.tfstate.*
+
+# Variables que podrían contener contraseñas
+# o información privada
+*.tfvars
+*.tfvars.json
+
+# Permitimos archivos de variables de ejemplo
+!*.tfvars.example
+
+# Archivos temporales y errores
+crash.log
+crash.*.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# ==========================================
+# PYTHON
+# ==========================================
+
+# Caché de Python
+__pycache__/
+*.pyc
+
+# Entornos virtuales
+.venv/
+venv/
+
+# ==========================================
+# BENCHMARKS
+# ==========================================
+
+# Resultados generados localmente
+resultados.csv
+
+# ==========================================
+# EDITOR Y SISTEMA OPERATIVO
+# ==========================================
+
+# Configuración personal de VS Code
+.vscode/
+
+# Archivos temporales de Windows
+Thumbs.db
+Desktop.ini
